@@ -1,0 +1,36 @@
+<!-- Welcome to Fluid.JS -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href='./favicon.ico' />
+    <title>Lumière</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="lib/fluid.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class='piano'>
+            
+        </div>
+        <canvas id="renderSurface"></canvas>
+    </main>
+
+    <script>
+        /* Get a reference to your canvas */
+        const canvas = document.getElementById('renderSurface');
+
+        /* Initiate the Fluid object with that canvas */
+        const fluid = new Fluid(canvas);
+
+        /* Activate the fluid */
+        fluid.activate();
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
