@@ -13,17 +13,6 @@ for (let i=0; i < 17; i++) {
     compKey.className = 'white-comp-key';
     compKey.innerHTML = whiteCompKey[i];
     key.appendChild(compKey);
-
-    // window.addEventListener('keydown', function(e) {
-    //     if (e.key === whiteCompKey[i].toLowerCase()) {
-    //         e.target.style.opacity = '80%';
-    //     }
-    // });
-
-    // key.addEventListener('keydown', function(e) {
-    //     e.target.style.opacity = '30%';
-    // });
-
 }
 
 const blackKeys = document.createElement('div');
@@ -44,15 +33,6 @@ for (let i=0; i<12; i++) {
     compKey.className = 'black-comp-key';
     compKey.innerHTML = blackCompKey[i];
     key.appendChild(compKey);
-
-    // key.addEventListener('mousedown', function(e) {
-    //     e.target.style.backgroundColor = 'gray';
-    // });
-
-    // key.addEventListener('mouseup', function(e) {
-    //     e.target.style.backgroundColor = 'white';
-    // });
-
     blackKeys.appendChild(key);
 }
 
